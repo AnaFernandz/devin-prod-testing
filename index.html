@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devin Prod Testing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">Devin<span>Prod</span></a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">&#9790;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>A small page, built and shipped by Devin</h1>
+        <p class="lead">A lightweight static site: plain HTML, CSS, and JavaScript with no build step.</p>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <article class="card">
+        <h3>Fast</h3>
+        <p>No frameworks, no bundler. Open <code>index.html</code> and it works.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive</h3>
+        <p>Layout adapts cleanly from phones to wide desktop screens.</p>
+      </article>
+      <article class="card">
+        <h3>Themeable</h3>
+        <p>Light and dark mode, remembered between visits.</p>
+      </article>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>This project is a starting point for quick experiments and production testing. Fork it, edit the content, and deploy it anywhere that serves static files, such as GitHub Pages.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> AnaFernandz</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
